@@ -15,9 +15,6 @@ function GalleryPage() {
   return (
     <>
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-10">
-        {/* Title of the page */}
-        {/* <div className="text-white p-4 text-xl font-bold">Gallery</div> */}
-
         {/* Gallery categories */}
         <div className="flex flex-row justify-center">
           {artCategory.map((category) => (

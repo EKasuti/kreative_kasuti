@@ -9,15 +9,16 @@ function NavBar() {
   };
 
   return (
-    <nav className="flex justify-between items-center text-white mt-8 pr-20 pl-20 ">
+    // w-full max-w-screen-xl mx-auto p-4 md:py-8
+    <nav className=" w-full max-w-screen-xl mx-auto p-4 md:py-10 flex justify-between items-center text-white mt-8">
       {/* LOGO */}
       <Link
         to="/"
         className={`text-white text-3xl font-bold `}
         onClick={() => handleLinkClick("/")}
       >
-        <span style={{ color: "#FFFF00" }}>Kreative</span> <span className="text-white">Kasuti</span>
-
+        <span style={{ color: "#FFFF00" }}>Kreative</span>{" "}
+        <span className="text-white">Kasuti</span>
       </Link>
 
       {/* PAGES */}

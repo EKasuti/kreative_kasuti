@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import PictureFrame from "../components/picture_frame";
-
-// Image imports
 import darkWall from "../assets/images/dark_wall.png";
 import { portfolioData } from "../data/PortfolioData";
 
@@ -9,7 +7,6 @@ function GalleryPage() {
   const { myPortfolioData, artCategory } = portfolioData;
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // Filter frames based on selected category
   const filteredFrames =
     selectedCategory === "All"
       ? myPortfolioData
@@ -17,9 +14,8 @@ function GalleryPage() {
 
   return (
     <>
-      <div className="pl-20">
-        <div className="text-white p-4 text-xl">GalleryPage</div>
-        {/* Categories of art: Portraits, Graphite, Charcoal, Color Pencil, Digital */}
+      <div className="w-full max-w-screen-xl mx-auto p-4 md:py-10">
+        {/* Gallery categories */}
         <div className="flex flex-row justify-center">
           {artCategory.map((category) => (
             <div
@@ -52,13 +48,13 @@ function GalleryPage() {
           ))}
         </div>
       </div>
+
+      {/* The framed portfolio */}
       <div
-        className="m-8 bg-gallery-image h-screen flex justify-between pt-20"
+        className="m-8 bg-gallery-image max-h-screen flex justify-center items-center pt-20"
         style={{ backgroundImage: `url(${darkWall})`, backgroundSize: "cover" }}
       >
-        {/* Map the frames from portfolio data */}
-        <div className="pl-40 flex justify-between">
-           {/* Two frames on the left */}
+        <div className="flex justify-between">
           <div className="flex flex-col mr-8">
             {filteredFrames.slice(0, 2).map((art) => (
               <div key={art.id} className="mb-4">
@@ -66,7 +62,7 @@ function GalleryPage() {
                   imageUrl={art.imageUrl}
                   altText={art.altText}
                   frameType={art.frameType}
-                  title = {art.title}
+                  title={art.title}
                   category={art.category}
                   artist={art.author}
                   description={art.description}
@@ -75,7 +71,6 @@ function GalleryPage() {
             ))}
           </div>
 
-          {/* One frame in the middle */}
           <div className="flex flex-col mt-6">
             {filteredFrames.slice(2, 3).map((art) => (
               <div key={art.id} className="">
@@ -83,7 +78,7 @@ function GalleryPage() {
                   imageUrl={art.imageUrl}
                   altText={art.altText}
                   frameType={art.frameType}
-                  title = {art.title}
+                  title={art.title}
                   artist={art.author}
                   category={art.category}
                 />
@@ -91,7 +86,6 @@ function GalleryPage() {
             ))}
           </div>
 
-          {/* Two frames on the right */}
           <div className="flex flex-col ml-8">
             {filteredFrames.slice(3, 5).map((art) => (
               <div key={art.id} className="mb-4">
@@ -99,7 +93,7 @@ function GalleryPage() {
                   imageUrl={art.imageUrl}
                   altText={art.altText}
                   frameType={art.frameType}
-                  title = {art.title}
+                  title={art.title}
                   artist={art.author}
                   category={art.category}
                 />

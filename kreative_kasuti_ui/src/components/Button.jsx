@@ -14,7 +14,7 @@ const PrimaryButton = ({
     borderRadius: borderRadius || "10px",
     padding: "10px 8px",
     cursor: "pointer",
-    width: width || "auto", // Set the width to 'auto' or specify a specific value
+    width: width || "auto", 
   };
 
   return (

@@ -1,5 +1,4 @@
 import Furaha from "../assets/images/furaha.jpg";
-import EasternBeauty from "../assets/images/eastern_beauty.jpg";
 import Horizon from "../assets/images/oil_painting.jpg";
 
 export const portfolioData = {

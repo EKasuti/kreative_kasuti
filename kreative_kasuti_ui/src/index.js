@@ -13,7 +13,7 @@ import ShopPage from './pages/shop_page';
 
 ReactDOM.render(
   <Router>
-    <div className='bg-black flex flex-col min-h-screen'>
+    <div className='bg-primary-black flex flex-col min-h-screen'>
       <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />

@@ -24,9 +24,9 @@ function GalleryPage() {
             <div
               key={category.id}
               onClick={() => setSelectedCategory(category.category)}
-              className={`flex flex-row items-center text-white m-1 cursor-pointer ${
+              className={`flex flex-row items-center text-primary-text-color m-1 cursor-pointer ${
                 selectedCategory === category.category
-                  ? "font-bold text-yellow-500"
+                  ? "font-bold text-primary-button"
                   : ""
               }`}
             >
@@ -34,14 +34,14 @@ function GalleryPage() {
               <div
                 className={`border-l-2 pl-1 h-4 ${
                   selectedCategory === category.category
-                    ? "border-yellow-500"
+                    ? "border-primary-button"
                     : "border-white"
                 }`}
               ></div>
               <div
                 className={`border pl-4 pr-4 ${
                   selectedCategory === category.category
-                    ? "border-yellow-500"
+                    ? "border-primary-button"
                     : "border-white"
                 }`}
               >

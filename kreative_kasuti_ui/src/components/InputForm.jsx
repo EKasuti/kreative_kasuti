@@ -9,7 +9,10 @@ const InputForm = ({ suggestedName, height }) => {
         <input
           type="text"
           placeholder={suggestedName}
-          className={`w-full p-2 text-white bg-transparent ${height ? `h-${height}` : ""}`}
+          // made the background black to have a tranparent feel
+          className={`w-full p-2 text-primary-text-color bg-primary-black ${
+            height ? `h-${height}` : ""
+          }`}
         />
       </div>
     </>

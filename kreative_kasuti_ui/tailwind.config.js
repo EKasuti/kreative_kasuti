@@ -10,6 +10,7 @@ module.exports = {
       'medium-gray' : '#C6D3E6', // medium gray 400
       'light-gray' : '#C8C8C8C8', // light gray 200
       'transparent' : '#00FFFFFF', 
+      'picture-frame' : '#1e1e1e', // a darker shade of gray
     },
     extend: {},
   },

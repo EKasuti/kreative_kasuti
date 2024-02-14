@@ -43,8 +43,6 @@ For any inquiries or feedback, you can reach out to Emmanuel Kasuti via the foll
 - GitHub: [EKasuti](https://github.com/EKasuti)
 - LinkedIn: [Emmanuel Kasuti](https://www.linkedin.com/in/emmanuel-kasuti/)
 - Instagram: [@_kasuti](https://www.instagram.com/_kasuti/)
-- Twitter: [Emmanuel Kasuti](https://twitter.com/emmanuel_kasuti)
-- Figma: [Emmanuel Kasuti](https://www.figma.com/@emmanuel_kasuti)
 
 ## License
 

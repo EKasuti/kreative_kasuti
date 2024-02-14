@@ -56,7 +56,7 @@ export default function LandingPage() {
     <>
       {/*======== HomePage - Intro ========*/}
       <div className="flex justify-center items-center h-screen">
-        <div className="text-white">
+        <div className="text-primary-text-color">
           {/* Header */}
           <p className="text-6xl font-bold flex justify-center">Hi!</p>
           <p className="text-6xl font-bold mt-4">I'm Emmanuel Kasuti</p>
@@ -73,7 +73,7 @@ export default function LandingPage() {
       <div className="flex justify-center pl-20 h-screen">
         {/* Green Rectangle & profile image */}
         <div className="mr-20">
-          <div className="ml-auto w-150 h-150 bg-yellow-500 rounded-bl-full rounded-tl-full rounded-br-full">
+          <div className="ml-auto w-150 h-150 bg-primary-button rounded-bl-full rounded-tl-full rounded-br-full">
             {/* Image on the left */}
             <img
               src={profileImage}
@@ -84,7 +84,7 @@ export default function LandingPage() {
         </div>
 
         {/* Get to Know me paragraph */}
-        <div className="text-white flex flex-col pr-20 mt-20">
+        <div className="text-primary-text-color flex flex-col pr-20 mt-20">
           <p className="text-3xl font-bold ">GET TO KNOW ME</p>
           <p className="text-xl mt-4" style={{ maxWidth: "600px" }}>
             My name is Emmanuel Kasuti. I am a Sophomore at Dartmouth College

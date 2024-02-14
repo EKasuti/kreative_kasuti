@@ -4,9 +4,12 @@ import darkWall from "../assets/images/dark_wall.png";
 import { portfolioData } from "../data/PortfolioData";
 
 function GalleryPage() {
+  // Gets the data from portfolioData - a way to destructure it
   const { myPortfolioData, artCategory } = portfolioData;
+  // State variable for the current category
   const [selectedCategory, setSelectedCategory] = useState("All");
 
+  // Filter frames based on the category
   const filteredFrames =
     selectedCategory === "All"
       ? myPortfolioData
@@ -21,9 +24,9 @@ function GalleryPage() {
             <div
               key={category.id}
               onClick={() => setSelectedCategory(category.category)}
-              className={`flex flex-row items-center text-white m-1 cursor-pointer ${
+              className={`flex flex-row items-center text-primary-text-color m-1 cursor-pointer ${
                 selectedCategory === category.category
-                  ? "font-bold text-yellow-500"
+                  ? "font-bold text-primary-button"
                   : ""
               }`}
             >
@@ -31,14 +34,14 @@ function GalleryPage() {
               <div
                 className={`border-l-2 pl-1 h-4 ${
                   selectedCategory === category.category
-                    ? "border-yellow-500"
+                    ? "border-primary-button"
                     : "border-white"
                 }`}
               ></div>
               <div
                 className={`border pl-4 pr-4 ${
                   selectedCategory === category.category
-                    ? "border-yellow-500"
+                    ? "border-primary-button"
                     : "border-white"
                 }`}
               >
@@ -54,6 +57,7 @@ function GalleryPage() {
         className="m-8 bg-gallery-image max-h-screen flex justify-center items-center pt-20"
         style={{ backgroundImage: `url(${darkWall})`, backgroundSize: "cover" }}
       >
+        {/* Two frames on the left */}
         <div className="flex justify-between">
           <div className="flex flex-col mr-8">
             {filteredFrames.slice(0, 2).map((art) => (
@@ -71,6 +75,7 @@ function GalleryPage() {
             ))}
           </div>
 
+          {/* One frame in the middle */}
           <div className="flex flex-col mt-6">
             {filteredFrames.slice(2, 3).map((art) => (
               <div key={art.id} className="">
@@ -86,6 +91,7 @@ function GalleryPage() {
             ))}
           </div>
 
+          {/* The other two frames on the right */}
           <div className="flex flex-col ml-8">
             {filteredFrames.slice(3, 5).map((art) => (
               <div key={art.id} className="mb-4">

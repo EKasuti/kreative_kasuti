@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 function NavBar() {
-  const location = useLocation();
-  const [activeLink, setActiveLink] = useState(location.pathname);
+  const location = useLocation(); // Gets the current location 
+  const [activeLink, setActiveLink] = useState(location.pathname); // State variable that keeps track of active link
 
   useEffect(() => {
-    setActiveLink(location.pathname);
+    setActiveLink(location.pathname); // Updates active link when location changes
   }, [location.pathname]);
 
   return (
@@ -22,7 +22,7 @@ function NavBar() {
         <span className="text-primary-text-color">Kasuti</span>
       </Link>
 
-      {/* PAGES */}
+      {/* Navigation Links */}
       <div className="text-xl font-bold flex gap-4">
         <Link
           to="/"

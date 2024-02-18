@@ -3,7 +3,7 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      'primary-button': '#FFFF00',
+      'primary-button': '#FFD700',
       'primary-text-color': '#FFFFFF',
       'primary-black': '#000000',
       'dark-gray' : '#616161', // dark gray 700

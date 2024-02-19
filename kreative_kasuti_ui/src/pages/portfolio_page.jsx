@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PictureFrame from "../components/PictureFrame";
 import darkWall from "../assets/images/dark_wall.png";
 import { portfolioData } from "../data/PortfolioData";
+import PortfolioFrame from "../components/PortfolioFrame";
 
 function PortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -118,19 +119,16 @@ function PortfolioPage() {
                 {category.category === "Web" && (
                   <div className="text-primary-text-color mt-6 sm:ml-20">
                     {/* Section Title */}
-                    <div className="font-bold text-xl mb-4">Web section</div>
-                    <div className="flex justify-between">
+                    <div className="font-bold text-xl mb-4">
+                      Web Development
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {category.webDevData.map((web) => (
-                        <div
-                          key={web.id}
-                          className="border bg-primary-text-color h-200 w-200"
-                        >
-                          <img
-                            src={web.imageUrl}
+                        <div key={web.id}>
+                          <PortfolioFrame
+                            imageUrl={web.imageUrl}
                             alt={web.altText}
-                            title={web.title}
-                            label={web.label}
-                            className="w-100 h-80"
+                            description={web.briefDescription}
                           />
                         </div>
                       ))}
@@ -140,20 +138,16 @@ function PortfolioPage() {
 
                 {/* 3D MODELS */}
                 {category.category === "3d" && (
-                  <div className="text-primary-text-color min-h-screen sm:ml-20">
+                  <div className="text-primary-text-color min-h-screen sm:ml-20 ">
                     {/* Section Title */}
-                    <div className="font-bold text-xl mb-4">3D section</div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+                    <div className="font-bold text-xl mb-4">3D Modeling</div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {category.mayaModelsData.map((maya) => (
-                        <div key={maya.id} className="">
-                          <img
-                            src={maya.imageUrl}
-                            alt={maya.altText}
-                            title={maya.title}
-                            label={maya.label}
-                            className="w-100 h-80"
-                          />
-                        </div>
+                        <PortfolioFrame
+                          imageUrl={maya.imageUrl}
+                          alt={maya.altText}
+                          description={maya.briefDescription}
+                        />
                       ))}
                     </div>
                   </div>

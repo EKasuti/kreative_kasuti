@@ -58,10 +58,10 @@ export default function LandingPage() {
       <div className="flex justify-center items-center min-h-screen">
         <div className="text-primary-text-color">
           {/* Header */}
-          <p className="text-2xl sm:text-6xl font-bold flex justify-center">
+          <p className="text-4xl sm:text-6xl font-bold flex justify-center">
             Hi!
           </p>
-          <p className="text-2xl sm:text-6xl font-bold mt-4">
+          <p className="text-3xl sm:text-6xl font-bold mt-4">
             I'm Emmanuel Kasuti
           </p>
           <div

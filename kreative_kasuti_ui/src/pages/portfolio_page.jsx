@@ -10,7 +10,7 @@ function PortfolioPage() {
     <>
       <div className="w-full sm:max-w-screen-xl mx-auto p-4 md:py-10">
         {/* Categories at the top */}
-        <div className="flex justify-between text-sm sm:text-lg overflow-x-auto ">
+        <div className="flex justify-between sm:justify-center text-sm sm:text-lg overflow-x-auto ">
           {portfolioData.portfolioCategory.map((category) => (
             <div
               key={category.id}

@@ -55,11 +55,15 @@ export default function LandingPage() {
   return (
     <>
       {/*======== HomePage - Intro ========*/}
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center items-center min-h-screen">
         <div className="text-primary-text-color">
           {/* Header */}
-          <p className="text-6xl font-bold flex justify-center">Hi!</p>
-          <p className="text-6xl font-bold mt-4">I'm Emmanuel Kasuti</p>
+          <p className="text-2xl sm:text-6xl font-bold flex justify-center">
+            Hi!
+          </p>
+          <p className="text-2xl sm:text-6xl font-bold mt-4">
+            I'm Emmanuel Kasuti
+          </p>
           <div
             className="text-2xl overflow-hidden whitespace-no-wrap mt-4 flex justify-center "
             style={{ height: "50px" }}
@@ -70,9 +74,9 @@ export default function LandingPage() {
       </div>
 
       {/*======== AboutMe - Section ========*/}
-      <div className="flex justify-center pl-20 h-screen">
-        {/* Green Rectangle & profile image */}
-        <div className="mr-20">
+      <div className="sm:flex justify-center pl-8 sm:pl-20 min-h-screen">
+        {/* Yellow Rectangle & profile image - large screens*/}
+        <div className="mr-8 sm:mr-20">
           <div className="ml-auto w-150 h-150 bg-primary-button rounded-bl-full rounded-tl-full rounded-br-full">
             {/* Image on the left */}
             <img
@@ -84,24 +88,18 @@ export default function LandingPage() {
         </div>
 
         {/* Get to Know me paragraph */}
-        <div className="text-primary-text-color flex flex-col pr-20 mt-20">
-          <p className="text-3xl font-bold ">GET TO KNOW ME</p>
-          <p className="text-xl mt-4" style={{ maxWidth: "600px" }}>
+        <div className="text-primary-text-color flex flex-col pr-8 sm:pr-20 mt-20">
+          <p className="text-xl sm:text-3xl font-bold ">GET TO KNOW ME</p>
+          <p className="text-l sm:text-xl mt-4" style={{ maxWidth: "600px" }}>
             My name is Emmanuel Kasuti. I am a Sophomore at Dartmouth College
             from Kenya. I’m currently pursuing a degree in Computer science
             modified with digital arts. With a focus on creative problem solving
             and innovation. I’m excited to learn more about how technology can
             be used to shape our world
           </p>
-
           {/* Button to view portfolio */}
           <div className="mt-4">
-            <PrimaryButton
-              text="View Portfolio"
-              onClick={handleLinkClick}
-              backgroundColor="#FFFF00"
-              width="350px"
-            />
+            <PrimaryButton text="View Portfolio" onClick={handleLinkClick} />
           </div>
         </div>
       </div>

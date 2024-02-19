@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.40acaa3f.css",
-    "main.js": "/static/js/main.14bb5868.js",
+    "main.css": "/static/css/main.44448f55.css",
+    "main.js": "/static/js/main.e6a701c6.js",
+    "static/media/melodic_canvas.png": "/static/media/melodic_canvas.53071442a9001ef7661c.png",
+    "static/media/mighty_chess.png": "/static/media/mighty_chess.9b70acd3e4621e54f0a4.png",
+    "static/media/silent_kingdom.png": "/static/media/silent_kingdom.dae563645759d024daaf.png",
+    "static/media/shot1.png": "/static/media/shot1.08eba4e4319ec93c170e.png",
+    "static/media/shot5.png": "/static/media/shot5.1269687218db962833a4.png",
+    "static/media/shot3.png": "/static/media/shot3.73c2aaa7646718b15ad8.png",
+    "static/media/shot4.png": "/static/media/shot4.be3bff6de9f01b044749.png",
+    "static/media/shot2.png": "/static/media/shot2.3ee133cf8ff426f5ee35.png",
+    "static/media/melovibe.png": "/static/media/melovibe.a4d386e59b7a20b25246.png",
     "static/media/furaha.jpg": "/static/media/furaha.c2af103fe8b157049dd0.jpg",
     "static/media/profile_image.png": "/static/media/profile_image.661440e82a344ed7a09b.png",
     "index.html": "/index.html",
-    "main.40acaa3f.css.map": "/static/css/main.40acaa3f.css.map",
-    "main.14bb5868.js.map": "/static/js/main.14bb5868.js.map"
+    "main.44448f55.css.map": "/static/css/main.44448f55.css.map",
+    "main.e6a701c6.js.map": "/static/js/main.e6a701c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.40acaa3f.css",
-    "static/js/main.14bb5868.js"
+    "static/css/main.44448f55.css",
+    "static/js/main.e6a701c6.js"
   ]
 }

@@ -4,7 +4,7 @@
 
 - **Author:** Emmanuel Kasuti
 - **Purpose:** The purpose of this project is to showcase my projects and make the source code open-source.
-- **Timeline:** January 28th - February 14th
+- **Timeline:** January 28th - February 18th
 
 ## Running the Project
 

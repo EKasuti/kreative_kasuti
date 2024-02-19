@@ -8,9 +8,9 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   // Function to handle button click
-  // And navigate to "/gallery"
+  // And navigate to portfolio page
   const handleLinkClick = () => {
-    navigate("/gallery");
+    navigate("/portfolio");
   };
 
   // useEffect phrases: Roles

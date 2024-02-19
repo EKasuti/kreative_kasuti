@@ -1,7 +1,13 @@
-import Furaha from "../assets/images/furaha.jpg";
+// Art Work
+import SilentKingdom from "../assets/images/art_work/silent_kingdom.png";
+import MelodicCanvas from "../assets/images/art_work/melodic_canvas.png";
+import Furaha from "../assets/images/art_work/furaha.jpg";
+import MightyChess from "../assets/images/art_work/mighty_chess.png"; 
 import Horizon from "../assets/images/oil_painting.jpg";
-import SilentKingdom from "../assets/images/silent_kingdom.png";
-import Melovibe from "../assets/images/melovibe.png";
+
+
+// Web Dev
+import Melovibe from "../assets/images/web_dev/melovibe.png";
 
 export const portfolioData = {
   portfolioCategory: [
@@ -42,16 +48,18 @@ export const portfolioData = {
           altText: "silent_kingdom",
           frameType: "Landscape",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
         },
         {
           id: 2,
-          title: "The horizon",
-          label: "Oil Painting",
+          title: "Melodic Canvas",
+          label: "Charcoal",
           author: "Kasuti",
-          imageUrl: Horizon,
-          altText: "Oil painting",
+          imageUrl: MelodicCanvas,
+          altText: "melodic canvas",
           frameType: "Landscape",
+          description:
+            "Melodic Canvas merges music sheets and painted brushstrokes, reflecting the artist's emotional response to music. Each stroke captures the mood, creating a vibrant tapestry of color and melody",
         },
         {
           id: 3,
@@ -64,12 +72,15 @@ export const portfolioData = {
         },
         {
           id: 4,
-          title: "The horizon",
-          label: "Oil Painting",
+          title: "Mighty Chess",
+          label: "Charcoal",
           author: "Kasuti",
-          imageUrl: Horizon,
-          altText: "Oil painting",
+          imageUrl: MightyChess,
+          altText: "mighty chess",
           frameType: "Landscape",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        
         },
         {
           id: 5,
@@ -80,7 +91,7 @@ export const portfolioData = {
           altText: "silent_kingdom",
           frameType: "Landscape",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
         },
       ],
     },
@@ -92,12 +103,9 @@ export const portfolioData = {
           id: 1,
           title: "MeloVibe",
           imageUrl: Melovibe,
+          altText: "melo vibe",
           description:
-            "MeloVibe is your personalized mood-based music companion. \
-            Seamlessly matching your vibe, MeloVibe crafts curated playlists tailored to your current mood, \
-            whether you're feeling upbeat, chill, energetic, or relaxed. Simply drag the gclef to your mood, \
-            and let MeloVibe set the perfect musical backdrop for your moment. With MeloVibe, \
-            discover the power of music to enhance every mood",
+            "MeloVibe is your personalized mood-based music companion. Seamlessly matching your vibe, MeloVibe crafts curated playlists tailored to your current mood,whether you're feeling upbeat, chill, energetic, or relaxed. Simply drag the gclef to your mood, and let MeloVibe set the perfect musical backdrop for your moment. With MeloVibe, discover the power of music to enhance every mood",
         },
       ],
     },

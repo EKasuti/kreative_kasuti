@@ -23,7 +23,7 @@ function NavBar() {
   const [showListIcon, setShowListIcon] = useState(true);
 
   return (
-    <nav className="w-full max-w-screen-xl mx-auto p-4 flex justify-between items-start text-primary-text-color sm:mt-8">
+    <nav className="w-full max-w-screen-xl mx-auto p-4 flex justify-between items-start text-primary-text-color sm:mt-2">
       {/* LOGO */}
       <Link
         to="/"

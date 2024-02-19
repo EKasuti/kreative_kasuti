@@ -22,19 +22,19 @@ export const portfolioData = {
     },
     {
       id: 2,
-      category: "Art Work",
+      category: "Art",
     },
     {
       id: 3,
-      category: "Web Dev",
+      category: "Web",
     },
     {
       id: 4,
-      category: "Software Dev",
+      category: "Software",
     },
     {
       id: 5,
-      category: "3d models",
+      category: "3d",
     },
   ],
 
@@ -42,7 +42,7 @@ export const portfolioData = {
     {
       // ART WORK
       id: 1,
-      category: "Art Work",
+      category: "Art",
       artWorkData: [
         {
           id: 1,
@@ -102,7 +102,7 @@ export const portfolioData = {
     {
       // WEB DEV DATA
       id: 2,
-      category: "Web Dev",
+      category: "Web",
       webDevData: [
         {
           id: 1,
@@ -119,7 +119,7 @@ export const portfolioData = {
     {
       // SOFTWARE DEV DATA
       id: 3,
-      category: "Software Dev",
+      category: "Software",
       softwareDevData: [
         {
           id: 1,
@@ -133,7 +133,7 @@ export const portfolioData = {
     {
       // 3D MODELS DATA
       id: 4,
-      category: "3d models",
+      category: "3d",
       mayaModelsData: [
         {
           id: 1,

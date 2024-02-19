@@ -6,6 +6,7 @@ import { portfolioData } from "../data/PortfolioData";
 function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
+  // Filter data based on the selected category
   const filteredData =
     selectedCategory === "All"
       ? portfolioData.detailedPortfolioData
@@ -16,6 +17,8 @@ function GalleryPage() {
   return (
     <>
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-10">
+
+        {/* Categories at the top */}
         <div className="flex flex-row justify-center">
           {portfolioData.portfolioCategory.map((category) => (
             <div
@@ -48,6 +51,7 @@ function GalleryPage() {
           ))}
         </div>
 
+        {/* Body based on the categories */}
         {filteredData.map((category) => (
           <div key={category.id}>
             <h2>{category.category}</h2>

@@ -10,9 +10,6 @@ import Melovibe from "../assets/images/web_dev/melovibe.png";
 // Maya Projects
 import shot1 from "../assets/images/3d_modeling/shot1.png";
 import shot2 from "../assets/images/3d_modeling/shot2.png";
-import shot3 from "../assets/images/3d_modeling/shot3.png";
-import shot4 from "../assets/images/3d_modeling/shot4.png";
-import shot5 from "../assets/images/3d_modeling/shot5.png";
 
 export const portfolioData = {
   portfolioCategory: [
@@ -110,9 +107,7 @@ export const portfolioData = {
           label: "Music App",
           imageUrl: Melovibe,
           altText: "melo vibe",
-          description:
-            "MeloVibe is your personalized mood-based music companion. Seamlessly matching your vibe, MeloVibe crafts curated playlists tailored to your current mood,whether you're feeling upbeat, chill, energetic, or relaxed. Simply drag the gclef to your mood, and let MeloVibe set the perfect musical backdrop for your moment. With MeloVibe, discover the power of music to enhance every mood",
-        },
+          briefDescription:"MeloVibe crafts personalized playlists based on your mood. Its intuitive interface and vibrant design enhance the music discovery experience." },
       ],
     },
 
@@ -141,6 +136,7 @@ export const portfolioData = {
           label: "Shot1",
           imageUrl: shot1,
           altText: "shot 1",
+          briefDescription: "Enter a realm where elegance meets intrigue. Explore a meticulously designed room with a pool table, a mysterious briefcase, and the allure of fine wine and cigars. Click for a glimpse into professional craftsmanship and creative prowess",
         },
         {
           id: 2,
@@ -149,27 +145,7 @@ export const portfolioData = {
           imageUrl: shot2,
           altText: "shot 2",
         },
-        {
-          id: 3,
-          title: "Custom Room",
-          label: "Shot3",
-          imageUrl: shot3,
-          altText: "shot 3",
-        },
-        {
-          id: 4,
-          title: "Custom Room",
-          label: "Shot4",
-          imageUrl: shot4,
-          altText: "shot 4",
-        },
-        {
-          id: 5,
-          title: "Custom Room",
-          label: "Shot5",
-          imageUrl: shot5,
-          altText: "shot 5",
-        },
+        
       ],
     },
   ],

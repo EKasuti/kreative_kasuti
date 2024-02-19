@@ -93,11 +93,7 @@ export const portfolioData = {
           title: "MeloVibe",
           imageUrl: Melovibe,
           description:
-            "MeloVibe is your personalized mood-based music companion. \
-            Seamlessly matching your vibe, MeloVibe crafts curated playlists tailored to your current mood, \
-            whether you're feeling upbeat, chill, energetic, or relaxed. Simply drag the gclef to your mood, \
-            and let MeloVibe set the perfect musical backdrop for your moment. With MeloVibe, \
-            discover the power of music to enhance every mood",
+            "MeloVibe is your personalized mood-based music companion. Seamlessly matching your vibe, MeloVibe crafts curated playlists tailored to your current mood, whether you're feeling upbeat, chill, energetic, or relaxed. Simply drag the gclef to your mood, and let MeloVibe set the perfect musical backdrop for your moment. With MeloVibe, discover the power of music to enhance every mood",
         },
       ],
     },

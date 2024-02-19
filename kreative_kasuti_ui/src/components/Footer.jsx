@@ -38,7 +38,7 @@ const Footer = () => {
         <hr class="my-6 border-light-gray sm:mx-auto dark:border-dark-gray lg:my-8" />
         <span class="block text-sm text-gray-500 sm:text-center dark:text-medium-gray">
           © 2024{" "}
-          <a href="#" class="hover:underline">
+          <a href="/" class="hover:underline">
             Kreative Kasuti
           </a>
           . All Rights Reserved.

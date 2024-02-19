@@ -1,26 +1,13 @@
 import React from "react";
 
-const PrimaryButton = ({
-  text,
-  onClick,
-  color,
-  backgroundColor,
-  borderRadius,
-  width,
-}) => {
-  const buttonStyle = {
-    color: color || "#000000",
-    backgroundColor: backgroundColor || "yellow-500",
-    borderRadius: borderRadius || "10px",
-    padding: "10px 8px",
-    cursor: "pointer",
-    width: width || "auto", 
-  };
-
+const PrimaryButton = ({ text, onClick }) => {
   return (
-    <button style={buttonStyle} onClick={onClick}>
+    <div
+      className="inline-block px-6 py-2 rounded-2xl bg-primary-button text-primary-black  text-lg cursor-pointer transition duration-300 ease-in-out hover:bg-primary-button"
+      onClick={onClick}
+    >
       {text}
-    </button>
+    </div>
   );
 };
 

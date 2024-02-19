@@ -19,8 +19,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/gallery" class="hover:underline me-4 md:me-6">
-                Gallery
+              <a href="/portfolio" class="hover:underline me-4 md:me-6">
+                Portfolio
               </a>
             </li>
             <li>

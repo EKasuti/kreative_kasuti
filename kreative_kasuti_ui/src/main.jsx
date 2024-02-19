@@ -3,7 +3,8 @@ import React from "react";
 import "./index.css";
 import { createBrowserRouter } from "react-router-dom";
 
-import { LandingPage, GalleryPage, ContactPage, ShopPage, Root } from "./pages";
+import { LandingPage, PortfolioPage, ContactPage, ShopPage, Root } from "./pages";
+import PortfolioPage from "./pages/portfolio_page";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,8 @@ const router = createBrowserRouter([
         element: <LandingPage />,
       },
       {
-        path: "/gallery",
-        element: <GalleryPage />,
+        path: "/portfolio",
+        element: <PortfolioPage />,
       },
       {
         path: "/contact",

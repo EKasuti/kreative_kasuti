@@ -3,7 +3,7 @@ import PictureFrame from "../components/PictureFrame";
 import darkWall from "../assets/images/dark_wall.png";
 import { portfolioData } from "../data/PortfolioData";
 
-function GalleryPage() {
+function PortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   // Filter data based on the selected category
@@ -170,4 +170,4 @@ function GalleryPage() {
   );
 }
 
-export default GalleryPage;
+export default PortfolioPage;

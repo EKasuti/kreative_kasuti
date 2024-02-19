@@ -7,9 +7,9 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
 import LandingPage from './pages/landing_page';
-import GalleryPage from './pages/gallery_page';
 import ContactPage from './pages/contact_page';
 import ShopPage from './pages/shop_page';
+import PortfolioPage from './pages/portfolio_page';
 
 ReactDOM.render(
   <Router>
@@ -17,7 +17,7 @@ ReactDOM.render(
       <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/shop" element={<ShopPage />} />
       </Routes>

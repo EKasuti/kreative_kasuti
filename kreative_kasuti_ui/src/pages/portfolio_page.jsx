@@ -140,7 +140,7 @@ function PortfolioPage() {
                 {category.category === "3d" && (
                   <div className="text-primary-text-color min-h-screen sm:ml-20 ">
                     {/* Section Title */}
-                    <div className="font-bold text-xl mb-4">3D Modeling</div>
+                    <div className="font-bold text-xl mb-4 text-pr">3D Modeling</div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {category.mayaModelsData.map((maya) => (
                         <PortfolioFrame

@@ -128,7 +128,13 @@ function PortfolioPage() {
                           <PortfolioFrame
                             imageUrl={web.imageUrl}
                             alt={web.altText}
-                            description={web.briefDescription}
+                            title={web.title}
+                            briefDescription={web.briefDescription}
+                            skills={web.skills}
+                            software={web.software}
+                            fullDescription={web.fullDescription}
+                            externalLink={web.externalLink}
+                            externalSite={web.externalSite}
                           />
                         </div>
                       ))}
@@ -146,7 +152,11 @@ function PortfolioPage() {
                         <PortfolioFrame
                           imageUrl={maya.imageUrl}
                           alt={maya.altText}
-                          description={maya.briefDescription}
+                          title={maya.title}
+                          briefDescription={maya.briefDescription}
+                          fullDescription={maya.fullDescription}
+                          skills={maya.skills}
+                          software={maya.software}
                         />
                       ))}
                     </div>

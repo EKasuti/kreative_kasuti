@@ -1,11 +1,25 @@
 import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 
-function PortfolioFrame({ imageUrl, altText, description }) {
+function PortfolioFrame({
+  imageUrl,
+  altText,
+  briefDescription,
+  title,
+  skills,
+  software,
+  fullDescription,
+  externalSite,
+  externalLink,
+}) {
   const [overlayVisible, setOverlayVisible] = useState(false);
 
   const handleLinkClick = () => {
     setOverlayVisible(true);
+  };
+
+  const handleExternalLink = () => {
+    window.location.href = externalLink;
   };
 
   const handleCloseOverlay = () => {
@@ -22,7 +36,7 @@ function PortfolioFrame({ imageUrl, altText, description }) {
 
         {/* Brief Description */}
         <div className="text-primary-text-color text-sm sm:text-xl mt-4">
-          {description}
+          {briefDescription}
         </div>
 
         {/* Button */}
@@ -60,9 +74,39 @@ function PortfolioFrame({ imageUrl, altText, description }) {
                 />
               </div>
 
-              {/* Description */}
-              <div className="mt-4 ">
-                <p>{description}</p>
+              {/* Body */}
+              <div className="mt-4">
+                {/* Title */}
+                <div className="font-bold text-l sm:text-xl">{title}</div>
+
+                {/* Skills */}
+                <div className="flex items-center">
+                  <div className="font-semibold text-l sm:text-xl">
+                    Skills :
+                  </div>
+                  <div className="pl-1 text-sm sm:text-l">{skills}</div>
+                </div>
+
+                {/* Software */}
+                <div className="flex items-center">
+                  <div className="font-semibold  text-l sm:text-xl">
+                    Software :
+                  </div>
+                  <div className="pl-1 text-sm sm:text-l">{software}</div>
+                </div>
+
+                {/* Description */}
+                <div className="mt-4">
+                  <p className="text-sm sm:text-l">{fullDescription}</p>
+                </div>
+
+                {/* External Button link*/}
+                <div
+                  className="inline-block px-6 rounded-lg bg-primary-button border border-primary-button text-l mt-4 cursor-pointer"
+                  onClick={handleExternalLink}
+                >
+                  View {externalSite}
+                </div>
               </div>
             </div>
           </div>

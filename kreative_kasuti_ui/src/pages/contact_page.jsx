@@ -22,17 +22,17 @@ function ContactPage() {
     <>
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-10">
         {/* Page Title */}
-        <div className="text-primary-text-color p-4 pl-20 text-xl flex justify-center">
+        <div className="text-primary-text-color p-4 sm:pl-20 text-xl flex justify-center">
           CONTACT ME
         </div>
 
         {/* Content */}
-        <div className="flex">
+        <div className="sm:flex">
           {/* Used flex to have items on theh left and items on the right */}
           <div className="pl-20"></div>{" "}
           {/* Empty div to add space on the left */}
           {/* Input form */}
-          <div className="text-primary-text-color flex border border-primary-button w-full">
+          <div className="text-primary-text-color flex border border-primary-button w-full ">
             <div className="m-6 w-full">
               {/* Name, email, subject, message */}
               <InputForm suggestedName="Enter your name" />
@@ -62,7 +62,7 @@ function ContactPage() {
             </div>
           </div>
           {/* Get in Touch */}
-          <div className="w-full ml-10 text-primary-text-color ">
+          <div className="w-full sm:ml-10 text-primary-text-color ">
             <div className="text-4xl mt-4">Get in Touch</div>
             {/* Address, Phone number, Email, Location */}
             <div className="mt-4 text-sm">Address</div>

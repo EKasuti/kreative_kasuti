@@ -27,7 +27,7 @@ function NavBar() {
       {/* LOGO */}
       <Link
         to="/"
-        className={`text-primary-text-color text-l sm:text-3xl font-bold ${
+        className={`text-primary-text-color text-2xl sm:text-3xl font-bold ${
           activeLink === "/" && "border-b-2 border-primary-button"
         }`}
       >

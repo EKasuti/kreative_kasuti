@@ -33,13 +33,13 @@ const PictureFrame = ({
       </div>
 
       {/* Frame title and category */}
-      <div className="group-hover:opacity-100 opacity-0 absolute bottom-0 right-0 p-4 text-primary-text-color pr-12 pb-14 transition-opacity duration-300">
+      <div className="group-hover:opacity-100 opacity-0 absolute bottom-0 right-4 sm:right-0 p-4 text-primary-text-color pr-12 pb-14 transition-opacity duration-300">
         <div className="text-xl font-bold">{title}</div>
         <div className="text-right">{category}</div>
       </div>
 
       {/* Icons */}
-      <div className="pt-12 pl-12 top-0 left-0 absolute group-hover:opacity-100 opacity-0 transition-opacity duration-300">
+      <div className="pt-12 pl-12 top-0 left-4 sm:left-0 absolute group-hover:opacity-100 opacity-0 transition-opacity duration-300">
         <div
           className="border border-rounded border-primary-text-color rounded-full p-2 cursor-pointer"
           onClick={toggleOverlay}

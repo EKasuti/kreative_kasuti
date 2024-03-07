@@ -162,6 +162,27 @@ function PortfolioPage() {
                     </div>
                   </div>
                 )}
+
+                {/* ARCHITECTURE */}
+                {category.category === "Architecture" && (
+                  <div className="text-primary-text-color min-h-screen sm:ml-20 ">
+                    {/* Section Title */}
+                    <div className="font-bold text-xl mb-4 text-pr">Architecture</div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {category.architectureData.map((arch) => (
+                        <PortfolioFrame
+                          imageUrl={arch.imageUrl}
+                          alt={arch.altText}
+                          title={arch.title}
+                          briefDescription={arch.briefDescription}
+                          fullDescription={arch.fullDescription}
+                          skills={arch.skills}
+                          software={arch.software}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
               </>
             ) : null}
           </div>

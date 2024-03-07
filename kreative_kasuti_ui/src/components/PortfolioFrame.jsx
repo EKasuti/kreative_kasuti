@@ -18,9 +18,9 @@ function PortfolioFrame({
     setOverlayVisible(true);
   };
 
-  const handleExternalLink = () => {
-    window.location.href = externalLink;
-  };
+  // const handleExternalLink = () => {
+  //   window.location.href = externalLink;
+  // };
 
   const handleCloseOverlay = () => {
     setOverlayVisible(false);

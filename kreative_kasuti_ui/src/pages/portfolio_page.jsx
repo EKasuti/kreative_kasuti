@@ -5,7 +5,7 @@ import { portfolioData } from "../data/PortfolioData";
 import PortfolioFrame from "../components/PortfolioFrame";
 
 function PortfolioPage() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("Architecture");
 
   return (
     <>
@@ -171,8 +171,8 @@ function PortfolioPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {category.architectureData.map((arch) => (
                         <PortfolioFrame
-                          imageUrl={arch.imageUrl}
-                          alt={arch.altText}
+                          imageUrl={arch.imageUrl1}
+                          alt={arch.altText1}
                           title={arch.title}
                           briefDescription={arch.briefDescription}
                           fullDescription={arch.fullDescription}

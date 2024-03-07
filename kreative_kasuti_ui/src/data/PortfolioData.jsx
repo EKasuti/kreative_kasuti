@@ -3,8 +3,9 @@ import SilentKingdom from "../assets/images/art_work/silent_kingdom.png";
 import MelodicCanvas from "../assets/images/art_work/melodic_canvas.png";
 import Furaha from "../assets/images/art_work/furaha.jpg";
 import MightyChess from "../assets/images/art_work/mighty_chess.png";
-import InfiniteHorizon from "../assets/images/architecture/infiniteHorizon/image1.png";
-import Horizon2 from "../assets/images/architecture/infiniteHorizon/infinite_1.png";
+import Horizon1 from "../assets/images/architecture/infiniteHorizon/infinite_1.png";
+import Horizon2 from "../assets/images/architecture/infiniteHorizon/infinite_2.png";
+import Horizon3 from "../assets/images/architecture/infiniteHorizon/infinite_3.png";
 
 // Web Dev
 import Melovibe from "../assets/images/web_dev/melovibe.png";
@@ -185,8 +186,12 @@ export const portfolioData = {
           id: 1,
           title: "INFINITE HORIZON",
           label: "infinite",
-          imageUrl: Horizon2,
-          altText: "infinite_horizon",
+          imageUrl1: Horizon1,
+          altText1: "infinitehorizon1",
+          imageUrl2: Horizon2,
+          altText2: "infinitehorizon2",
+          imageUrl3: Horizon3,
+          altText3: "infinite_horizon3",
           skills: "Design, Texture and Material application",
           software: "Rhino, Illustrator, Photoshop",
           briefDescription:
